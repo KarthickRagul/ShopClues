@@ -1,0 +1,792 @@
+<html>
+<head>
+<title>TestNG:  Functional Testing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Functional Testing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Oct 31 18:31:26 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>289 seconds (289636 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesSearch.ValidateSearchItem()'><b>ValidateSearchItem</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesSearch<br>Parameters: Xccct<br/>
+<a href="#Output-1744032146" onClick='toggleBox("Output-1744032146", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1744032146" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1744032146">
+Title loaded is correct<br/>
+NO RESULT FOUND !<br/>
+No item found<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesSearch@2fd66ad3</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesFilters.Fliter()'><b>Fliter</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesFilters<br>Parameters: Mobiles<br/>
+<a href="#Output-112797307" onClick='toggleBox("Output-112797307", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-112797307" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-112797307">
+Suggestions are : <br/>
+mobiles in Feature Phones
+mobiles 4g in Smartphones
+mobiles below 500
+mobiles under 5000
+mobiles under 2000 screen touch phone
+Mobiles phones under 500
+mobiles 4g 64gb 4gb ram lowest price
+Mobiles 4gb ram and 64gb rom dual volty
+mobiles under 7000 with 3gb ram and finger
+mobiles having finger print scanner<br/>
+https://www.shopclues.com/search?q=Mobiles&sc_z=4444&z=0&shopClues_surety[]=1&by_combo[]=2356745&fsrc=shopClues_surety,by_combo<br/>
+The url contains the filters<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesFilters@2f0a87b3</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesLocationField.getLocationPinCode()'><b>getLocationPinCode</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesLocationField<br>Parameters: 4323<br/>
+<a href="#Output-142103421" onClick='toggleBox("Output-142103421", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-142103421" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-142103421">
+Invalid pincode Entered<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesLocationField@4fcd19b3</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesSearchAndAddtoCart.Search()'><b>Search</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesSearchAndAddtoCart<br>Parameters: Watch<br/>
+<a href="#Output-962927234" onClick='toggleBox("Output-962927234", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-962927234" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-962927234">
+Recent Searches
+Clear Search History
+glass wall mobile pictures stickers in mobile shopping
+Trending Searches
+Time Sale
+Mobiles
+T-Shirts
+Headphones
+Shoes
+Sarees
+Shirts
+Watches
+Bedsheets
+Trimmers<br/>
+Trending searches along with Recent searches  is displayed<br/>
+watch in Men Watches
+watch for men in Men Watches
+watches for women
+watch combo
+watches for boy
+watch for girls
+Watch mobile
+Watch for boys
+watch fastrack<br/>
+Suggestions  matches with search item <br/>
+Search field is updated with the suggestion text successfully<br/>
+Titan Women Black Dial Silver Stainless Steel Analog Wa
+?323 89% Off
+?339 ?2,999
+Free Shipping
+Titan Youth Women Round Black Dial Silver Stainless Ste
+?343 82% Off
+?364 ?1,999
+Free Shipping
+Titan Youth Analog Black Dial Silver Stainless Steel St
+?368 81% Off
+?389 ?1,999
+Free Shipping
+Fastrack Women Analog Watch - NM6078SM01
+?448 77% Off
+?469 ?1,999
+Free Shipping<br/>
+Correct Item Added to cart<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesSearchAndAddtoCart@376b4233</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesSearchAndAddtoCart.Search()'><b>Search</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesSearchAndAddtoCart<br>Parameters: Glass<br/>
+<a href="#Output-1700078557" onClick='toggleBox("Output-1700078557", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1700078557" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1700078557">
+Trending Searches
+Time Sale
+Mobiles
+T-Shirts
+Headphones
+Shoes
+Sarees
+Shirts
+Watches
+Bedsheets
+Trimmers<br/>
+Trending searches is displayed<br/>
+glass top gas stove in Gas Cooktops
+glasses eye for night vision in Eyewear
+Glass wall mobile pictures stickers in mobile shopping
+Glass hookah with flavour coal and Tong by
+Glass
+Glass and back both in 1oder hoton 9n
+Glass and cover combo Asus zenfone max m1
+glass drop crystals of chandelier ceiling hanging
+glass guard for asus zenfone max pro m2
+glass jar with cork glass jar with cork<br/>
+Suggestions  matches with search item <br/>
+Search field is updated with the suggestion text successfully<br/>
+Shopping jaipur Beautiful Kundan Meenakari Wooden Mobil
+?551 64% Off
+?599 ?1,549
+Free Shipping
+TSV YT-1288 Extra Long Selfie For Best Pictures With B
+?576 42% Off
+?597 ?999
+Free Shipping
+Indo Digital YT-1288 Extra Long Selfie For Best Picture
+?627 37% Off
+?680 ?999
+Crystal Digital YT-1288 Extra Long Selfie For Best Pict
+?646 35% Off
+?699 ?999<br/>
+Correct Item Added to cart<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesSearchAndAddtoCart@376b4233</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesSearch.ValidateSearchItem()'><b>ValidateSearchItem</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesSearch<br>Parameters: Watch <br/>
+<a href="#Output-1988664928" onClick='toggleBox("Output-1988664928", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1988664928" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1988664928">
+Title loaded is correct<br/>
+Analogue Blue Dial Mens Watch SM30137.03
+?8,800
+?10,000
+Free Shipping<br/>
+Titan Karishma Round Gold Metal Strap Analog Watch For
+?393 86% Off
+?414 ?2,999
+Free Shipping<br/>
+Fastrack Men Watch - 661
+?373 81% Off
+?394 ?1,999
+Free Shipping<br/>
+Fastrack Analog Quartz 1474sm01 Silver Dial Rectangle S
+?478 76% Off
+?499 ?1,999
+Free Shipping<br/>
+Titan Men Classic Analog Watch NH9159SL01
+?438 78% Off
+?459 ?1,999
+Free Shipping<br/>
+Fastrack Men Analog Silver Dial Watch sky 666
+?448 77% Off
+?469 ?1,999
+Free Shipping<br/>
+Titan Round Dial Leather Brown Strap Watches Combo For
+?684 72% Off
+?739 ?2,499
+Free Shipping<br/>
+Fastrack Analog Quartz Silver Dial Rectangle Stainless
+?528 73% Off
+?549 ?1,999
+Free Shipping<br/>
+Fastrack 3099SL01 Casual Watch For Men
+?475 76% Off
+?519 ?1,999
+Free Shipping<br/>
+Radius by Smartshop16 Men Round Black Dial Leather Anal
+?98 90% Off
+?99 ?999
+Free Shipping<br/>
+Titan 9151BM01 Classic Watch For Men
+?703 76% Off
+?759 ?2,999
+Free Shipping<br/>
+Fastrack 3121SM02 Black Round Dial Silver Stainless Ste
+?513 74% Off
+?559 ?1,999
+Free Shipping<br/>
+Total item:12<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesSearch@2fd66ad3</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesHyperLinks.getLinks()'><b>getLinks</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesHyperLinks<br/>
+<a href="#Output-1699443392" onClick='toggleBox("Output-1699443392", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1699443392" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1699443392">
+Total No.of Links Present : 312<br/>
+Links are:<br/>
+Sell With Us<br/>
+Call Us<br/>
+Search<br/>
+Sign In<br/>
+Location<br/>
+MOBILES & MORE<br/>
+MEN<br/>
+WOMEN<br/>
+HOME & KITCHEN<br/>
+APPLIANCES<br/>
+SPORTS & MORE<br/>
+ESSENTIALS<br/>
+OFFERS<br/>
+GLOBAL SHOPPING<br/>
+Time Sale<br/>
+Flu Care<br/>
+Food & Beverage<br/>
+Personal Hygiene<br/>
+Home Cleaning<br/>
+Nutrition & Supplements<br/>
+Kitchen & Dining<br/>
+Refurbished Mobiles<br/>
+Mobile Accessories<br/>
+Sunday Flea
+Market<br/>
+Prime
+Mall<br/>
+Stunning Home
+Interiors<br/>
+Spain Style
+Men's Footwear<br/>
+Happy
+Easy Go<br/>
+See More<br/>
+Easy Returns & Replacement<br/>
+Sign In/Register<br/>
+Our Policies<br/>
+CluesBucks<br/>
+Payment Options<br/>
+ShopClues Surety<br/>
+FAQs (Help)<br/>
+Service Centers<br/>
+User Agreement<br/>
+Refer & Earn<br/>
+Merchant Panel<br/>
+How To Sell<br/>
+Commission Structure<br/>
+Fullfillment Policy<br/>
+Policies & Rules<br/>
+User Agreement<br/>
+Testimonials<br/>
+Seller Summit<br/>
+Merchant Blog<br/>
+Developer Resources<br/>
+About Us<br/>
+History<br/>
+Band of Trust<br/>
+Brand Guidelines<br/>
+TV Commercials<br/>
+In the News<br/>
+Awards<br/>
+Careers<br/>
+Blog<br/>
+Merchant Support<br/>
+Bulk Orders<br/>
+Press<br/>
+In the News<br/>
+Mobile & Tablets:<br/>
+Android Phones<br/>
+Smartphones<br/>
+Feature Phones<br/>
+Unboxed Phones<br/>
+Refurbished Phones<br/>
+Tablets<br/>
+CDMA Phones<br/>
+Value Added Services<br/>
+Sell Old/ Used Mobiles<br/>
+Computers:<br/>
+Laptops<br/>
+Printers<br/>
+Routers<br/>
+Ink & Toner Cartridges<br/>
+Monitors<br/>
+Video Games<br/>
+Unboxed & Refurbished Laptops<br/>
+Assembled Desktops<br/>
+Data Cards<br/>
+TV, Audio & Large Appliances:<br/>
+TVs & DTH<br/>
+Home Theatre Systems<br/>
+Hidden Cameras & CCTVs<br/>
+Refrigerators<br/>
+Washing Machines<br/>
+Air Conditioners<br/>
+Cameras<br/>
+Speakers<br/>
+Mobile & Laptop Accessories:<br/>
+Headphones<br/>
+Power Banks<br/>
+Backpacks<br/>
+Mobile Cases & Covers<br/>
+Pen Drives<br/>
+External Hard Disks<br/>
+Mouse<br/>
+Smart Watches & Fitness Bands<br/>
+MicroSD Cards<br/>
+Appliances:<br/>
+Trimmers<br/>
+Hair Dryers<br/>
+Emergency Lights<br/>
+Water Purifiers<br/>
+Electric Kettles<br/>
+Hair Straighteners<br/>
+Induction Cooktops<br/>
+Sewing Machines<br/>
+Geysers<br/>
+Home & Kitchen:<br/>
+Bedsheets<br/>
+Hardware & Sanitaryware<br/>
+Towels, Bath Linens<br/>
+Furniture<br/>
+Cookware<br/>
+Kitchen Tools<br/>
+Home Cleaning Utilities<br/>
+Doormats<br/>
+Curtains<br/>
+Gardening Essentials<br/>
+Fashion:<br/>
+Women's Clothing<br/>
+Men's Clothing<br/>
+Women's Ethnic Wear<br/>
+Men's Fashion Accessories<br/>
+Sports Wear<br/>
+Western Wear<br/>
+Handbags & Wallets, Clutches<br/>
+Handbags<br/>
+Sarees<br/>
+T-Shirts<br/>
+Lingerie & Sleep Wear<br/>
+Footwear:<br/>
+Men's Sports Shoes<br/>
+Men's Slippers<br/>
+Casual Shoes<br/>
+Sandals & Floaters<br/>
+Formal Shoes<br/>
+Women Flats<br/>
+Ballerinas<br/>
+Loafers<br/>
+Boots<br/>
+Shoe Care & Accessories<br/>
+Travel & Luggage:<br/>
+Duffle Bags<br/>
+Laptop Bags<br/>
+Travel Pouches<br/>
+Backpacks<br/>
+Suitcases & Trolleys<br/>
+Travel Accessories<br/>
+Gym Bags<br/>
+Messenger Bags<br/>
+School Bags<br/>
+Safety Locks<br/>
+Jewelry & Watches:<br/>
+Coins & Bars<br/>
+Men's Watches<br/>
+Women's Watches<br/>
+Necklaces Sets<br/>
+Fashion Jewelry<br/>
+Pendants and Lockets<br/>
+Earrings<br/>
+Rings<br/>
+Jewelry Boxes<br/>
+Kid's Watches<br/>
+Automotive:<br/>
+Bike Accessories / Tools<br/>
+Car Cleaning Aids<br/>
+Helmets<br/>
+Bike Body Covers<br/>
+Car Accessories / Tools<br/>
+Riding Gloves<br/>
+Car Perfumes<br/>
+Car Scratch Removers<br/>
+Car Audio | Video<br/>
+Bike Alarms<br/>
+Toys, Baby & Kids :<br/>
+Diapers<br/>
+Educational Toys<br/>
+Kid's Footwear<br/>
+Remote Controlled Toys<br/>
+Soft Toys<br/>
+Party Supplies<br/>
+Cubes<br/>
+Maternity Care<br/>
+Kid's Apparel<br/>
+Gourmet & Daily Needs :<br/>
+Office Supplies<br/>
+Pet Supplies<br/>
+Books<br/>
+Namkeen<br/>
+Stationery<br/>
+Pens & Markers<br/>
+Tea & Coffee<br/>
+Chocolates & Candies<br/>
+Indian Sweets<br/>
+Gifts<br/>
+Sports and Health<br/>
+Home Gym Equipment<br/>
+Exercise Bikes<br/>
+Gym Accessories<br/>
+Massagers<br/>
+Diabetic Care<br/>
+Cricket<br/>
+Table Tennis<br/>
+Beauty & Perfumes:<br/>
+Grooming Essentials<br/>
+Deodorants<br/>
+Men's Perfumes<br/>
+Hair Care<br/>
+Women's Perfumes<br/>
+Face Packs<br/>
+Oral Care<br/>
+Herbal Care<br/>
+Value Combo<br/>
+Women's Hygiene<br/>
+Offers & Coupons<br/>
+Couple Watches<br/>
+Gas Stoves<br/>
+Air Coolers<br/>
+Air Purifiers<br/>
+Headphones / Mic / Headset<br/>
+Pressure Cookers<br/>
+Sandwich Makers<br/>
+Air Friers / Deep Friers<br/>
+Irons<br/>
+LED TV<br/>
+Men Jackets<br/>
+Educational Toys<br/>
+Stabilizers<br/>
+Heaters<br/>
+Car Audio Systems<br/>
+Photo Frames<br/>
+Men's Shoes<br/>
+Decorative Lights<br/>
+Rain Wear<br/>
+Bedsheets<br/>
+Top Brands<br/>
+Refer & Earn<br/>
+Shopclues Surety Program<br/>
+Join the Club Now<br/>
+Privacy Policy<br/>
+User Agreement<br/>
+Notes to Security Practices<br/>
+Labor Compliance<br/>
+Wall of Fame<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesHyperLinks@5204062d</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesSearch.ValidateSearchItem()'><b>ValidateSearchItem</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesSearch<br>Parameters: Shoes<br/>
+<a href="#Output-557016605" onClick='toggleBox("Output-557016605", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-557016605" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-557016605">
+Title loaded is correct<br/>
+AD
+Aadi Mens Beige Lace-up Outdoor Shoes
+?484 19% Off
+?529 ?599<br/>
+Feet First Leather Slip-on Casual Shoes for Men
+?1,090 56% Off
+?1,247 ?2,499
+Free Shipping<br/>
+Yellow Tree High Quality Gray Casual Shoes
+?498 50% Off
+?544 ?999<br/>
+Men's Maroon and Black Lace up Casual Shoe
+?408 59% Off
+?449 ?999<br/>
+Yellow Tree High Quality Brown Casual Shoes
+?498 50% Off
+?544 ?999<br/>
+Capital S Casual Shoes for Men
+?551 44% Off
+?599 ?999<br/>
+Spain Style Men Black Lace-up Outdoors Shoes
+?325 67% Off
+?362 ?999
+Free Shipping<br/>
+Aadi Men Black Lace-up Casual Shoes
+?375 62% Off
+?394 ?999
+Free Shipping<br/>
+Knoos Men Tan Lace-up Casual Shoes
+?384 61% Off
+?404 ?999
+Free Shipping<br/>
+Blue Pop Men Red Lace-up Derby Shoes
+?470 52% Off
+?514 ?999
+Free Shipping<br/>
+Aadi New Look Casual Shoes
+?389 23% Off
+?429 ?509
+Free Shipping<br/>
+Knoos Men Brown Smart Casual Lace-up Shoe
+?446 55% Off
+?489 ?999
+Free Shipping<br/>
+BRK Blue Smart PVC Lace-up Casual Shoes For Men
+?638 68% Off
+?659 ?1,999<br/>
+Total item:13<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesSearch@2fd66ad3</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesSearch.ValidateSearchItem()'><b>ValidateSearchItem</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesSearch<br>Parameters: 7777777<br/>
+<a href="#Output-792195577" onClick='toggleBox("Output-792195577", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-792195577" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-792195577">
+Title loaded is correct<br/>
+NO RESULT FOUND !<br/>
+No item found<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesSearch@2fd66ad3</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesLocationField.getLocationPinCode()'><b>getLocationPinCode</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesLocationField<br>Parameters: 642001<br/>
+<a href="#Output-1665308978" onClick='toggleBox("Output-1665308978", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1665308978" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1665308978">
+Valid pincode<br/>
+Pincode added Succesfully<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesLocationField@4fcd19b3</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesLocationField.getLocationPinCode()'><b>getLocationPinCode</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesLocationField<br>Parameters: 11<br/>
+<a href="#Output-1847559273" onClick='toggleBox("Output-1847559273", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1847559273" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1847559273">
+Invalid pincode Entered<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesLocationField@4fcd19b3</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesFilters.Fliter()'><b>Fliter</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesFilters<br>Parameters: Laptop<br/>
+<a href="#Output-1637601612" onClick='toggleBox("Output-1637601612", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1637601612" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1637601612">
+Suggestions are : <br/>
+laptop in Laptops
+laptop bags in Laptop Bags
+laptop skin
+Laptop bag
+laptop speaker
+Laptop covers,key guard and screen protector for 14inch
+laptop screen guard for 15.6 laptop
+laptop back cover
+laptops in laptops below 15000
+Laptop 4gb ram 500gb internal low new price<br/>
+https://www.shopclues.com/search?q=Laptop&sc_z=4444&z=0&shopClues_surety[]=1&by_combo[]=2356745&fsrc=shopClues_surety,by_combo<br/>
+The url contains the filters<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesFilters@2f0a87b3</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesLocationField.getLocationPinCode()'><b>getLocationPinCode</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesLocationField<br>Parameters: 620003<br/>
+<a href="#Output-369333979" onClick='toggleBox("Output-369333979", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-369333979" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-369333979">
+Valid pincode<br/>
+Pincode added Succesfully<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesLocationField@4fcd19b3</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesLocationField.getLocationPinCode()'><b>getLocationPinCode</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesLocationField<br>Parameters: 4<br/>
+<a href="#Output-78377968" onClick='toggleBox("Output-78377968", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-78377968" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-78377968">
+Invalid pincode Entered<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesLocationField@4fcd19b3</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesSearch.ValidateSearchItem()'><b>ValidateSearchItem</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesSearch<br>Parameters: Mobile<br/>
+<a href="#Output-1041905665" onClick='toggleBox("Output-1041905665", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1041905665" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1041905665">
+Title loaded is correct<br/>
+MTR MT310 Dual Sim Feature Phone
+?646 35% Off
+?699 ?999<br/>
+I KALL K18 New 24 Inches61cm Display Dual Sim Feature P
+?788 47% Off
+?849 ?1,499
+Free Shipping<br/>
+MTR MT312 Dual Sim Feature Phone
+?693 76% Off
+?749 ?2,999<br/>
+Ikall K3310 1.8 inches (4.57 cm) Dual Sim Mobile Phone
+?570 42% Off
+?599 ?999<br/>
+I Kall K31 1.8 inch Dual Sim Feature Phone
+?522 34% Off
+?549 ?799
+Free Shipping<br/>
+MTR 312 1.8 inches (4.57 cm) Dual Sim Blue Feature Phon
+?646 46% Off
+?699 ?1,199
+Free Shipping<br/>
+Pear P310 Dual Sim Feature Phone
+?646 52% Off
+?699 ?1,357
+Free Shipping<br/>
+I Kall K444 24 Inch Dual Sim Feature Phone with Fast Ch
+?855 42% Off
+?899 ?1,499
+Free Shipping<br/>
+I KALL K75 14 Inch Display Single Sim Feature Phone
+?408 59% Off
+?449 ?999
+Free Shipping<br/>
+MTR FARARI 2.4 Inches(6.1cm) Display Dual Sim Feature P
+?1,045 47% Off
+?1,199 ?1,999
+Free Shipping<br/>
+I KALL K6300 New 28 inches 711 cm Display Triple Sim F
+?1,045 47% Off
+?1,199 ?1,999
+Free Shipping<br/>
+Pear P310 Dual Sim Feature Phone
+?655 34% Off
+?709 ?999
+Free Shipping<br/>
+Total item:12<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesSearch@2fd66ad3</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesLocationField.getLocationPinCode()'><b>getLocationPinCode</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesLocationField<br>Parameters: 620002<br/>
+<a href="#Output-497786326" onClick='toggleBox("Output-497786326", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-497786326" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-497786326">
+Valid pincode<br/>
+Pincode added Succesfully<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesLocationField@4fcd19b3</td></tr>
+<tr>
+<td title='com.qa.testscripts.TC_ValidateShopCluesLocationField.getLocationPinCode()'><b>getLocationPinCode</b><br>Test class: com.qa.testscripts.TC_ValidateShopCluesLocationField<br>Parameters: 642205<br/>
+<a href="#Output-557705922" onClick='toggleBox("Output-557705922", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-557705922" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-557705922">
+Valid pincode<br/>
+Pincode added Succesfully<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.qa.testscripts.TC_ValidateShopCluesLocationField@4fcd19b3</td></tr>
+</table><p>
+</body>
+</html>
